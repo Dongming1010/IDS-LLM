@@ -1,0 +1,541 @@
+|--- Variance <= 0.39
+|   |--- Tot_sum <= 3517.28
+|   |   |--- Header_Length <= 79.93
+|   |   |   |--- TCP <= 0.50
+|   |   |   |   |--- Protocol_Type <= 1.50
+|   |   |   |   |   |--- LLC <= 0.50
+|   |   |   |   |   |   |--- Srate <= 0.23
+|   |   |   |   |   |   |   |--- Rate <= 0.14
+|   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |--- Rate >  0.14
+|   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |--- Srate >  0.23
+|   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |--- LLC >  0.50
+|   |   |   |   |   |   |--- Radius <= 1.72
+|   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |--- Radius >  1.72
+|   |   |   |   |   |   |   |--- Min <= 54.76
+|   |   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |   |--- Min >  54.76
+|   |   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |--- Protocol_Type >  1.50
+|   |   |   |   |   |--- Srate <= 1.44
+|   |   |   |   |   |   |--- Tot_sum <= 1404.50
+|   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |   |   |--- Tot_sum >  1404.50
+|   |   |   |   |   |   |   |--- class: Mirai
+|   |   |   |   |   |--- Srate >  1.44
+|   |   |   |   |   |   |--- Max <= 362.18
+|   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |   |   |--- Max >  362.18
+|   |   |   |   |   |   |   |--- class: Mirai
+|   |   |   |--- TCP >  0.50
+|   |   |   |   |--- Duration <= 60.77
+|   |   |   |   |   |--- class: Recon
+|   |   |   |   |--- Duration >  60.77
+|   |   |   |   |   |--- fin_flag_number <= 0.50
+|   |   |   |   |   |   |--- IAT <= 83009724.00
+|   |   |   |   |   |   |   |--- Weight <= 135.20
+|   |   |   |   |   |   |   |   |--- Number <= 6.81
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- Number >  6.81
+|   |   |   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |   |--- Weight >  135.20
+|   |   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |   |   |--- IAT >  83009724.00
+|   |   |   |   |   |   |   |--- Variance <= 0.30
+|   |   |   |   |   |   |   |   |--- rst_flag_number <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |   |   |--- rst_flag_number >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- Variance >  0.30
+|   |   |   |   |   |   |   |   |--- fin_count <= 0.15
+|   |   |   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |   |   |--- fin_count >  0.15
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |--- fin_flag_number >  0.50
+|   |   |   |   |   |   |--- class: DDoS
+|   |   |--- Header_Length >  79.93
+|   |   |   |--- Magnitue <= 11.42
+|   |   |   |   |--- Number <= 7.33
+|   |   |   |   |   |--- urg_count <= 0.25
+|   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |--- urg_count >  0.25
+|   |   |   |   |   |   |--- fin_count <= 0.05
+|   |   |   |   |   |   |   |--- syn_flag_number <= 0.50
+|   |   |   |   |   |   |   |   |--- syn_count <= 1.30
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- syn_count >  1.30
+|   |   |   |   |   |   |   |   |   |--- class: Brute_Force
+|   |   |   |   |   |   |   |--- syn_flag_number >  0.50
+|   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |--- fin_count >  0.05
+|   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |--- Number >  7.33
+|   |   |   |   |   |--- IAT <= 83033560.00
+|   |   |   |   |   |   |--- Tot_size <= 50.01
+|   |   |   |   |   |   |   |--- Number <= 9.33
+|   |   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |   |--- Number >  9.33
+|   |   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |   |   |--- Tot_size >  50.01
+|   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |   |--- IAT >  83033560.00
+|   |   |   |   |   |   |--- Duration <= 59.44
+|   |   |   |   |   |   |   |--- urg_count <= 17.60
+|   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- urg_count >  17.60
+|   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |--- Duration >  59.44
+|   |   |   |   |   |   |   |--- Weight <= 193.08
+|   |   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |   |--- Weight >  193.08
+|   |   |   |   |   |   |   |   |--- rst_count <= 105.55
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- rst_count >  105.55
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |--- Magnitue >  11.42
+|   |   |   |   |--- Magnitue <= 16.52
+|   |   |   |   |   |--- IAT <= 0.00
+|   |   |   |   |   |   |--- Srate <= 364.06
+|   |   |   |   |   |   |   |--- syn_count <= 0.10
+|   |   |   |   |   |   |   |   |--- Magnitue <= 11.48
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |   |   |   |--- Magnitue >  11.48
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |--- syn_count >  0.10
+|   |   |   |   |   |   |   |   |--- HTTPS <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- HTTPS >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |--- Srate >  364.06
+|   |   |   |   |   |   |   |--- AVG <= 65.98
+|   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- AVG >  65.98
+|   |   |   |   |   |   |   |   |--- syn_count <= 1.30
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- syn_count >  1.30
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |--- IAT >  0.00
+|   |   |   |   |   |   |--- ack_flag_number <= 0.50
+|   |   |   |   |   |   |   |--- Min <= 84.40
+|   |   |   |   |   |   |   |   |--- Number <= 7.50
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- Number >  7.50
+|   |   |   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |   |   |   |--- Min >  84.40
+|   |   |   |   |   |   |   |   |--- urg_count <= 0.00
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- urg_count >  0.00
+|   |   |   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |--- ack_flag_number >  0.50
+|   |   |   |   |   |   |   |--- Weight <= 193.08
+|   |   |   |   |   |   |   |   |--- ack_count <= 0.30
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |   |   |   |--- ack_count >  0.30
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- Weight >  193.08
+|   |   |   |   |   |   |   |   |--- Min <= 71.40
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- Min >  71.40
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |--- Magnitue >  16.52
+|   |   |   |   |   |--- Protocol_Type <= 6.83
+|   |   |   |   |   |   |--- Header_Length <= 8176.57
+|   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |--- Header_Length >  8176.57
+|   |   |   |   |   |   |   |--- Srate <= 232.33
+|   |   |   |   |   |   |   |   |--- Std <= 283.93
+|   |   |   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |   |   |   |   |--- Std >  283.93
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |   |   |--- Srate >  232.33
+|   |   |   |   |   |   |   |   |--- Tot_size <= 354.90
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- Tot_size >  354.90
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |--- Protocol_Type >  6.83
+|   |   |   |   |   |   |--- Variance <= 0.20
+|   |   |   |   |   |   |   |--- Tot_size <= 378.72
+|   |   |   |   |   |   |   |   |--- Number <= 7.27
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- Number >  7.27
+|   |   |   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |   |   |   |--- Tot_size >  378.72
+|   |   |   |   |   |   |   |   |--- class: Mirai
+|   |   |   |   |   |   |--- Variance >  0.20
+|   |   |   |   |   |   |   |--- Magnitue <= 26.36
+|   |   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |   |   |   |--- Magnitue >  26.36
+|   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |--- Tot_sum >  3517.28
+|   |   |--- Tot_size <= 898.52
+|   |   |   |--- Tot_sum <= 3874.00
+|   |   |   |   |--- Tot_size <= 425.04
+|   |   |   |   |   |--- class: DoS
+|   |   |   |   |--- Tot_size >  425.04
+|   |   |   |   |   |--- class: Mirai
+|   |   |   |--- Tot_sum >  3874.00
+|   |   |   |   |--- Covariance <= 661932.61
+|   |   |   |   |   |--- class: Mirai
+|   |   |   |   |--- Covariance >  661932.61
+|   |   |   |   |   |--- class: DoS
+|   |   |--- Tot_size >  898.52
+|   |   |   |--- TCP <= 0.50
+|   |   |   |   |--- Max <= 1224.50
+|   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |--- Max >  1224.50
+|   |   |   |   |   |--- Magnitue <= 49.94
+|   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |--- Magnitue >  49.94
+|   |   |   |   |   |   |--- Srate <= 398.90
+|   |   |   |   |   |   |   |--- Min <= 1342.00
+|   |   |   |   |   |   |   |   |--- flow_duration <= 0.57
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- flow_duration >  0.57
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |--- Min >  1342.00
+|   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |--- Srate >  398.90
+|   |   |   |   |   |   |   |--- Header_Length <= 901472.06
+|   |   |   |   |   |   |   |   |--- AVG <= 1338.72
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- AVG >  1338.72
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |--- Header_Length >  901472.06
+|   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |--- TCP >  0.50
+|   |   |   |   |--- urg_count <= 891.10
+|   |   |   |   |   |--- HTTP <= 0.50
+|   |   |   |   |   |   |--- rst_count <= 465.50
+|   |   |   |   |   |   |   |--- psh_flag_number <= 0.50
+|   |   |   |   |   |   |   |   |--- Weight <= 141.55
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- Weight >  141.55
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |--- psh_flag_number >  0.50
+|   |   |   |   |   |   |   |   |--- Srate <= 218.09
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- Srate >  218.09
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |--- rst_count >  465.50
+|   |   |   |   |   |   |   |--- flow_duration <= 9.13
+|   |   |   |   |   |   |   |   |--- Tot_size <= 1599.65
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- Tot_size >  1599.65
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |--- flow_duration >  9.13
+|   |   |   |   |   |   |   |   |--- Srate <= 11.33
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- Srate >  11.33
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |--- HTTP >  0.50
+|   |   |   |   |   |   |--- AVG <= 2934.00
+|   |   |   |   |   |   |   |--- Srate <= 2289.03
+|   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |--- Srate >  2289.03
+|   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |--- AVG >  2934.00
+|   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |--- urg_count >  891.10
+|   |   |   |   |   |--- Min <= 1359.20
+|   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |--- Min >  1359.20
+|   |   |   |   |   |   |--- class: Spoofing
+|--- Variance >  0.39
+|   |--- IAT <= 166602848.00
+|   |   |--- IAT <= 166551400.00
+|   |   |   |--- ack_flag_number <= 0.50
+|   |   |   |   |--- TCP <= 0.50
+|   |   |   |   |   |--- Tot_size <= 286.65
+|   |   |   |   |   |   |--- IAT <= 166499176.00
+|   |   |   |   |   |   |   |--- Header_Length <= 114323.20
+|   |   |   |   |   |   |   |   |--- Variance <= 0.91
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- Variance >  0.91
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- Header_Length >  114323.20
+|   |   |   |   |   |   |   |   |--- urg_count <= 20.65
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- urg_count >  20.65
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |   |--- IAT >  166499176.00
+|   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |--- Tot_size >  286.65
+|   |   |   |   |   |   |--- Number <= 7.15
+|   |   |   |   |   |   |   |--- Protocol_Type <= 13.95
+|   |   |   |   |   |   |   |   |--- flow_duration <= 74.14
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- flow_duration >  74.14
+|   |   |   |   |   |   |   |   |   |--- class: Brute_Force
+|   |   |   |   |   |   |   |--- Protocol_Type >  13.95
+|   |   |   |   |   |   |   |   |--- Duration <= 34.80
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- Duration >  34.80
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |--- Number >  7.15
+|   |   |   |   |   |   |   |--- Covariance <= 209448.20
+|   |   |   |   |   |   |   |   |--- Variance <= 0.97
+|   |   |   |   |   |   |   |   |   |--- class: Mirai
+|   |   |   |   |   |   |   |   |--- Variance >  0.97
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |   |   |--- Covariance >  209448.20
+|   |   |   |   |   |   |   |   |--- Weight <= 193.08
+|   |   |   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |   |   |--- Weight >  193.08
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |--- TCP >  0.50
+|   |   |   |   |   |--- Tot_size <= 68.70
+|   |   |   |   |   |   |--- Srate <= 9.22
+|   |   |   |   |   |   |   |--- syn_count <= 1.19
+|   |   |   |   |   |   |   |   |--- Max <= 56.21
+|   |   |   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |   |   |--- Max >  56.21
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- syn_count >  1.19
+|   |   |   |   |   |   |   |   |--- rst_count <= 4.57
+|   |   |   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |   |   |   |   |--- rst_count >  4.57
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |--- Srate >  9.22
+|   |   |   |   |   |   |   |--- Min <= 47.00
+|   |   |   |   |   |   |   |   |--- class: Brute_Force
+|   |   |   |   |   |   |   |--- Min >  47.00
+|   |   |   |   |   |   |   |   |--- syn_count <= 1.00
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- syn_count >  1.00
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |--- Tot_size >  68.70
+|   |   |   |   |   |   |--- syn_flag_number <= 0.50
+|   |   |   |   |   |   |   |--- Tot_sum <= 936.30
+|   |   |   |   |   |   |   |   |--- Header_Length <= 50502.10
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- Header_Length >  50502.10
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |   |   |--- Tot_sum >  936.30
+|   |   |   |   |   |   |   |   |--- Tot_size <= 417.53
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- Tot_size >  417.53
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |   |--- syn_flag_number >  0.50
+|   |   |   |   |   |   |   |--- Tot_size <= 121.15
+|   |   |   |   |   |   |   |   |--- Tot_size <= 107.36
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- Tot_size >  107.36
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- Tot_size >  121.15
+|   |   |   |   |   |   |   |   |--- Tot_size <= 153.20
+|   |   |   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |   |   |--- Tot_size >  153.20
+|   |   |   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |--- ack_flag_number >  0.50
+|   |   |   |   |--- IAT <= 166499168.00
+|   |   |   |   |   |--- IAT <= 83199244.00
+|   |   |   |   |   |   |--- Header_Length <= 164437.34
+|   |   |   |   |   |   |   |--- fin_count <= 0.49
+|   |   |   |   |   |   |   |   |--- SSH <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Brute_Force
+|   |   |   |   |   |   |   |   |--- SSH >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Brute_Force
+|   |   |   |   |   |   |   |--- fin_count >  0.49
+|   |   |   |   |   |   |   |   |--- Tot_sum <= 4667.86
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- Tot_sum >  4667.86
+|   |   |   |   |   |   |   |   |   |--- class: DoS
+|   |   |   |   |   |   |--- Header_Length >  164437.34
+|   |   |   |   |   |   |   |--- IAT <= 0.00
+|   |   |   |   |   |   |   |   |--- IAT <= 0.00
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- IAT >  0.00
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |   |   |--- IAT >  0.00
+|   |   |   |   |   |   |   |   |--- syn_count <= 0.05
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |   |   |   |--- syn_count >  0.05
+|   |   |   |   |   |   |   |   |   |--- class: BenignTraffic
+|   |   |   |   |   |--- IAT >  83199244.00
+|   |   |   |   |   |   |--- Variance <= 0.97
+|   |   |   |   |   |   |   |--- Magnitue <= 32.78
+|   |   |   |   |   |   |   |   |--- HTTPS <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- HTTPS >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- Magnitue >  32.78
+|   |   |   |   |   |   |   |   |--- Header_Length <= 6183.24
+|   |   |   |   |   |   |   |   |   |--- class: DDoS
+|   |   |   |   |   |   |   |   |--- Header_Length >  6183.24
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |--- Variance >  0.97
+|   |   |   |   |   |   |   |--- rst_count <= 274.95
+|   |   |   |   |   |   |   |   |--- urg_count <= 0.55
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- urg_count >  0.55
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- rst_count >  274.95
+|   |   |   |   |   |   |   |   |--- psh_flag_number <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- psh_flag_number >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |--- IAT >  166499168.00
+|   |   |   |   |   |--- class: BenignTraffic
+|   |   |--- IAT >  166551400.00
+|   |   |   |--- class: Brute_Force
+|   |--- IAT >  166602848.00
+|   |   |--- Tot_sum <= 1094.35
+|   |   |   |--- IAT <= 166850792.00
+|   |   |   |   |--- Header_Length <= 25548.55
+|   |   |   |   |   |--- IAT <= 166846200.00
+|   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |--- IAT >  166846200.00
+|   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |--- Header_Length >  25548.55
+|   |   |   |   |   |--- syn_count <= 0.90
+|   |   |   |   |   |   |--- Tot_size <= 88.65
+|   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |--- Tot_size >  88.65
+|   |   |   |   |   |   |   |--- Srate <= 30.04
+|   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- Srate >  30.04
+|   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |--- syn_count >  0.90
+|   |   |   |   |   |   |--- urg_count <= 6.10
+|   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |--- urg_count >  6.10
+|   |   |   |   |   |   |   |--- Magnitue <= 11.71
+|   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |--- Magnitue >  11.71
+|   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |--- IAT >  166850792.00
+|   |   |   |   |--- IAT <= 167246296.00
+|   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |--- IAT >  167246296.00
+|   |   |   |   |   |--- class: Web-Based
+|   |   |--- Tot_sum >  1094.35
+|   |   |   |--- Rate <= 35.62
+|   |   |   |   |--- HTTPS <= 0.50
+|   |   |   |   |   |--- Min <= 58.50
+|   |   |   |   |   |   |--- syn_flag_number <= 0.50
+|   |   |   |   |   |   |   |--- Radius <= 95.15
+|   |   |   |   |   |   |   |   |--- Tot_sum <= 1252.50
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- Tot_sum >  1252.50
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |--- Radius >  95.15
+|   |   |   |   |   |   |   |   |--- Srate <= 22.41
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- Srate >  22.41
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |--- syn_flag_number >  0.50
+|   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |--- Min >  58.50
+|   |   |   |   |   |   |--- rst_count <= 0.25
+|   |   |   |   |   |   |   |--- Magnitue <= 15.10
+|   |   |   |   |   |   |   |   |--- DNS <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- DNS >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- Magnitue >  15.10
+|   |   |   |   |   |   |   |   |--- flow_duration <= 12.26
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- flow_duration >  12.26
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |--- rst_count >  0.25
+|   |   |   |   |   |   |   |--- Header_Length <= 66870.45
+|   |   |   |   |   |   |   |   |--- Radius <= 50.40
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- Radius >  50.40
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |--- Header_Length >  66870.45
+|   |   |   |   |   |   |   |   |--- urg_count <= 51.05
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- urg_count >  51.05
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |--- HTTPS >  0.50
+|   |   |   |   |   |--- Std <= 670.22
+|   |   |   |   |   |   |--- Std <= 70.12
+|   |   |   |   |   |   |   |--- Min <= 59.80
+|   |   |   |   |   |   |   |   |--- urg_count <= 179.10
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- urg_count >  179.10
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- Min >  59.80
+|   |   |   |   |   |   |   |   |--- flow_duration <= 612.57
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- flow_duration >  612.57
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |--- Std >  70.12
+|   |   |   |   |   |   |   |--- Header_Length <= 59558.60
+|   |   |   |   |   |   |   |   |--- Rate <= 2.25
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- Rate >  2.25
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |--- Header_Length >  59558.60
+|   |   |   |   |   |   |   |   |--- IAT <= 167246408.00
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- IAT >  167246408.00
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |--- Std >  670.22
+|   |   |   |   |   |   |--- Tot_sum <= 12664.95
+|   |   |   |   |   |   |   |--- urg_count <= 18.05
+|   |   |   |   |   |   |   |   |--- IAT <= 167249672.00
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |   |--- IAT >  167249672.00
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |--- urg_count >  18.05
+|   |   |   |   |   |   |   |   |--- Max <= 2938.00
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- Max >  2938.00
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |--- Tot_sum >  12664.95
+|   |   |   |   |   |   |   |--- Tot_size <= 94.30
+|   |   |   |   |   |   |   |   |--- Magnitue <= 47.94
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- Magnitue >  47.94
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- Tot_size >  94.30
+|   |   |   |   |   |   |   |   |--- Radius <= 2461.64
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- Radius >  2461.64
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |--- Rate >  35.62
+|   |   |   |   |--- urg_count <= 163.80
+|   |   |   |   |   |--- IAT <= 167246344.00
+|   |   |   |   |   |   |--- Duration <= 239.90
+|   |   |   |   |   |   |   |--- flow_duration <= 1.56
+|   |   |   |   |   |   |   |   |--- Srate <= 742.53
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- Srate >  742.53
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |--- flow_duration >  1.56
+|   |   |   |   |   |   |   |   |--- HTTP <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- HTTP >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |--- Duration >  239.90
+|   |   |   |   |   |   |   |--- Protocol_Type <= 8.75
+|   |   |   |   |   |   |   |   |--- IAT <= 166846232.00
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |   |--- IAT >  166846232.00
+|   |   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |   |--- Protocol_Type >  8.75
+|   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |--- IAT >  167246344.00
+|   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |--- urg_count >  163.80
+|   |   |   |   |   |--- IAT <= 166729208.00
+|   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |--- IAT >  166729208.00
+|   |   |   |   |   |   |--- IAT <= 166851008.00
+|   |   |   |   |   |   |   |--- IAT <= 166846248.00
+|   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |--- IAT >  166846248.00
+|   |   |   |   |   |   |   |   |--- class: Recon
+|   |   |   |   |   |   |--- IAT >  166851008.00
+|   |   |   |   |   |   |   |--- Srate <= 81.36
+|   |   |   |   |   |   |   |   |--- IAT <= 167241960.00
+|   |   |   |   |   |   |   |   |   |--- class: Spoofing
+|   |   |   |   |   |   |   |   |--- IAT >  167241960.00
+|   |   |   |   |   |   |   |   |   |--- class: Web-Based
+|   |   |   |   |   |   |   |--- Srate >  81.36
+|   |   |   |   |   |   |   |   |--- class: Spoofing

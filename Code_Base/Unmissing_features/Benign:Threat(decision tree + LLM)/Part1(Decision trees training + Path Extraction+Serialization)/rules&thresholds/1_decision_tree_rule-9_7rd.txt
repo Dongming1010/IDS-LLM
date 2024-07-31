@@ -1,0 +1,544 @@
+|--- urg_count <= 8.35
+|   |--- Std <= 39.83
+|   |   |--- Tot_sum <= 436.10
+|   |   |   |--- fin_count <= 0.05
+|   |   |   |   |--- syn_flag_number <= 0.50
+|   |   |   |   |   |--- Tot_size <= 57.55
+|   |   |   |   |   |   |--- Radius <= 5.94
+|   |   |   |   |   |   |   |--- Radius <= 5.63
+|   |   |   |   |   |   |   |   |--- Rate <= 3.41
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Rate >  3.41
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- Radius >  5.63
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Radius >  5.94
+|   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |--- Tot_size >  57.55
+|   |   |   |   |   |   |--- rst_count <= 14.15
+|   |   |   |   |   |   |   |--- syn_count <= 1.30
+|   |   |   |   |   |   |   |   |--- Tot_size <= 81.15
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Tot_size >  81.15
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- syn_count >  1.30
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- rst_count >  14.15
+|   |   |   |   |   |   |   |--- flow_duration <= 0.84
+|   |   |   |   |   |   |   |   |--- Header_Length <= 50053.40
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Header_Length >  50053.40
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- flow_duration >  0.84
+|   |   |   |   |   |   |   |   |--- Std <= 6.89
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Std >  6.89
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |--- syn_flag_number >  0.50
+|   |   |   |   |   |--- class: Threat
+|   |   |   |--- fin_count >  0.05
+|   |   |   |   |--- Protocol_Type <= 10.65
+|   |   |   |   |   |--- class: Threat
+|   |   |   |   |--- Protocol_Type >  10.65
+|   |   |   |   |   |--- fin_count <= 0.65
+|   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- fin_count >  0.65
+|   |   |   |   |   |   |--- class: Benign
+|   |   |--- Tot_sum >  436.10
+|   |   |   |--- Std <= 20.68
+|   |   |   |   |--- Header_Length <= 51990.20
+|   |   |   |   |   |--- urg_count <= 2.70
+|   |   |   |   |   |   |--- Covariance <= 65.16
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Covariance >  65.16
+|   |   |   |   |   |   |   |--- Protocol_Type <= 15.18
+|   |   |   |   |   |   |   |   |--- Header_Length <= 539.35
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Header_Length >  539.35
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- Protocol_Type >  15.18
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- urg_count >  2.70
+|   |   |   |   |   |   |--- syn_count <= 0.15
+|   |   |   |   |   |   |   |--- Srate <= 0.33
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- Srate >  0.33
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- syn_count >  0.15
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |--- Header_Length >  51990.20
+|   |   |   |   |   |--- Header_Length <= 82806.70
+|   |   |   |   |   |   |--- Number <= 11.50
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Number >  11.50
+|   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |--- Header_Length >  82806.70
+|   |   |   |   |   |   |--- flow_duration <= 57.88
+|   |   |   |   |   |   |   |--- Tot_size <= 99.60
+|   |   |   |   |   |   |   |   |--- Duration <= 103.05
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Duration >  103.05
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- Tot_size >  99.60
+|   |   |   |   |   |   |   |   |--- Magnitue <= 54.84
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Magnitue >  54.84
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- flow_duration >  57.88
+|   |   |   |   |   |   |   |--- Tot_size <= 58.80
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- Tot_size >  58.80
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |--- Std >  20.68
+|   |   |   |   |--- ack_flag_number <= 0.50
+|   |   |   |   |   |--- urg_count <= 0.17
+|   |   |   |   |   |   |--- Tot_size <= 55.15
+|   |   |   |   |   |   |   |--- flow_duration <= 60.13
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- flow_duration >  60.13
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- Tot_size >  55.15
+|   |   |   |   |   |   |   |--- IAT <= 41463032.02
+|   |   |   |   |   |   |   |   |--- IAT <= 0.03
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- IAT >  0.03
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- IAT >  41463032.02
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- urg_count >  0.17
+|   |   |   |   |   |   |--- AVG <= 83.00
+|   |   |   |   |   |   |   |--- AVG <= 79.77
+|   |   |   |   |   |   |   |   |--- Tot_sum <= 1219.45
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Tot_sum >  1219.45
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- AVG >  79.77
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- AVG >  83.00
+|   |   |   |   |   |   |   |--- syn_count <= 1.25
+|   |   |   |   |   |   |   |   |--- Max <= 167.80
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Max >  167.80
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- syn_count >  1.25
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |--- ack_flag_number >  0.50
+|   |   |   |   |   |--- flow_duration <= 0.21
+|   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- flow_duration >  0.21
+|   |   |   |   |   |   |--- Srate <= 37.11
+|   |   |   |   |   |   |   |--- Tot_size <= 84.60
+|   |   |   |   |   |   |   |   |--- Protocol_Type <= 7.35
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Protocol_Type >  7.35
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- Tot_size >  84.60
+|   |   |   |   |   |   |   |   |--- urg_count <= 5.85
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- urg_count >  5.85
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Srate >  37.11
+|   |   |   |   |   |   |   |--- rst_count <= 15.65
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- rst_count >  15.65
+|   |   |   |   |   |   |   |   |--- Srate <= 40.56
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Srate >  40.56
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |--- Std >  39.83
+|   |   |--- rst_count <= 21.55
+|   |   |   |--- Magnitue <= 20.15
+|   |   |   |   |--- Srate <= 63.78
+|   |   |   |   |   |--- flow_duration <= 198.58
+|   |   |   |   |   |   |--- Srate <= 5.20
+|   |   |   |   |   |   |   |--- Duration <= 60.90
+|   |   |   |   |   |   |   |   |--- Srate <= 2.94
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Srate >  2.94
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- Duration >  60.90
+|   |   |   |   |   |   |   |   |--- rst_count <= 0.05
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- rst_count >  0.05
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Srate >  5.20
+|   |   |   |   |   |   |   |--- IAT <= 166551312.00
+|   |   |   |   |   |   |   |   |--- Header_Length <= 521.15
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Header_Length >  521.15
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- IAT >  166551312.00
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- flow_duration >  198.58
+|   |   |   |   |   |   |--- flow_duration <= 542.38
+|   |   |   |   |   |   |   |--- Magnitue <= 13.02
+|   |   |   |   |   |   |   |   |--- Rate <= 3.46
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Rate >  3.46
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- Magnitue >  13.02
+|   |   |   |   |   |   |   |   |--- Tot_sum <= 619.15
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Tot_sum >  619.15
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- flow_duration >  542.38
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |--- Srate >  63.78
+|   |   |   |   |   |--- flow_duration <= 44.61
+|   |   |   |   |   |   |--- syn_count <= 0.75
+|   |   |   |   |   |   |   |--- Rate <= 69912.46
+|   |   |   |   |   |   |   |   |--- Protocol_Type <= 12.55
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Protocol_Type >  12.55
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- Rate >  69912.46
+|   |   |   |   |   |   |   |   |--- rst_count <= 0.95
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- rst_count >  0.95
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- syn_count >  0.75
+|   |   |   |   |   |   |   |--- TCP <= 0.50
+|   |   |   |   |   |   |   |   |--- IAT <= 83819576.01
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- IAT >  83819576.01
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- TCP >  0.50
+|   |   |   |   |   |   |   |   |--- Max <= 179.80
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Max >  179.80
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- flow_duration >  44.61
+|   |   |   |   |   |   |--- class: Threat
+|   |   |   |--- Magnitue >  20.15
+|   |   |   |   |--- Covariance <= 334993.23
+|   |   |   |   |   |--- Srate <= 51.52
+|   |   |   |   |   |   |--- rst_count <= 1.35
+|   |   |   |   |   |   |   |--- AVG <= 230.36
+|   |   |   |   |   |   |   |   |--- flow_duration <= 128.99
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- flow_duration >  128.99
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- AVG >  230.36
+|   |   |   |   |   |   |   |   |--- Covariance <= 100546.71
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Covariance >  100546.71
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- rst_count >  1.35
+|   |   |   |   |   |   |   |--- Rate <= 50.38
+|   |   |   |   |   |   |   |   |--- Duration <= 48.35
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Duration >  48.35
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- Rate >  50.38
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |--- Srate >  51.52
+|   |   |   |   |   |   |--- Radius <= 514.89
+|   |   |   |   |   |   |   |--- ack_flag_number <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- ack_flag_number >  0.50
+|   |   |   |   |   |   |   |   |--- urg_count <= 1.05
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- urg_count >  1.05
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Radius >  514.89
+|   |   |   |   |   |   |   |--- Radius <= 516.97
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- Radius >  516.97
+|   |   |   |   |   |   |   |   |--- Weight <= 193.08
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Weight >  193.08
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |--- Covariance >  334993.23
+|   |   |   |   |   |--- IAT <= 166551360.00
+|   |   |   |   |   |   |--- Protocol_Type <= 5.92
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Protocol_Type >  5.92
+|   |   |   |   |   |   |   |--- flow_duration <= 81.93
+|   |   |   |   |   |   |   |   |--- Protocol_Type <= 9.60
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Protocol_Type >  9.60
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- flow_duration >  81.93
+|   |   |   |   |   |   |   |   |--- Variance <= 0.95
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Variance >  0.95
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- IAT >  166551360.00
+|   |   |   |   |   |   |--- class: Threat
+|   |   |--- rst_count >  21.55
+|   |   |   |--- Magnitue <= 55.49
+|   |   |   |   |--- urg_count <= 4.15
+|   |   |   |   |   |--- Duration <= 127.40
+|   |   |   |   |   |   |--- Tot_sum <= 3211.70
+|   |   |   |   |   |   |   |--- flow_duration <= 1.75
+|   |   |   |   |   |   |   |   |--- Header_Length <= 321769.55
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Header_Length >  321769.55
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- flow_duration >  1.75
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Tot_sum >  3211.70
+|   |   |   |   |   |   |   |--- IAT <= 166563728.00
+|   |   |   |   |   |   |   |   |--- AVG <= 1508.07
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- AVG >  1508.07
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- IAT >  166563728.00
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- Duration >  127.40
+|   |   |   |   |   |   |--- rst_count <= 319.60
+|   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- rst_count >  319.60
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |--- urg_count >  4.15
+|   |   |   |   |   |--- Max <= 1495.00
+|   |   |   |   |   |   |--- Srate <= 32.65
+|   |   |   |   |   |   |   |--- IAT <= 166561832.00
+|   |   |   |   |   |   |   |   |--- Header_Length <= 76886.90
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Header_Length >  76886.90
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- IAT >  166561832.00
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Srate >  32.65
+|   |   |   |   |   |   |   |--- Header_Length <= 148793.20
+|   |   |   |   |   |   |   |   |--- Header_Length <= 30030.70
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Header_Length >  30030.70
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- Header_Length >  148793.20
+|   |   |   |   |   |   |   |   |--- urg_count <= 7.55
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- urg_count >  7.55
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- Max >  1495.00
+|   |   |   |   |   |   |--- Tot_sum <= 6064.90
+|   |   |   |   |   |   |   |--- Covariance <= 708371.25
+|   |   |   |   |   |   |   |   |--- flow_duration <= 4.47
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- flow_duration >  4.47
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- Covariance >  708371.25
+|   |   |   |   |   |   |   |   |--- flow_duration <= 1.03
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- flow_duration >  1.03
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- Tot_sum >  6064.90
+|   |   |   |   |   |   |   |--- Covariance <= 1139705.38
+|   |   |   |   |   |   |   |   |--- rst_count <= 474.50
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- rst_count >  474.50
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- Covariance >  1139705.38
+|   |   |   |   |   |   |   |   |--- Tot_sum <= 7686.10
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Tot_sum >  7686.10
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |--- Magnitue >  55.49
+|   |   |   |   |--- Tot_sum <= 24485.70
+|   |   |   |   |   |--- urg_count <= 0.40
+|   |   |   |   |   |   |--- Magnitue <= 61.20
+|   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- Magnitue >  61.20
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- urg_count >  0.40
+|   |   |   |   |   |   |--- Header_Length <= 29479.55
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Header_Length >  29479.55
+|   |   |   |   |   |   |   |--- flow_duration <= 49.51
+|   |   |   |   |   |   |   |   |--- Max <= 3418.60
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Max >  3418.60
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- flow_duration >  49.51
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |--- Tot_sum >  24485.70
+|   |   |   |   |   |--- flow_duration <= 2.26
+|   |   |   |   |   |   |--- flow_duration <= 0.84
+|   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- flow_duration >  0.84
+|   |   |   |   |   |   |   |--- urg_count <= 1.00
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- urg_count >  1.00
+|   |   |   |   |   |   |   |   |--- AVG <= 2165.93
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- AVG >  2165.93
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |--- flow_duration >  2.26
+|   |   |   |   |   |   |--- class: Threat
+|--- urg_count >  8.35
+|   |--- IAT <= 166551400.00
+|   |   |--- Header_Length <= 41682.35
+|   |   |   |--- Weight <= 193.08
+|   |   |   |   |--- IAT <= 0.02
+|   |   |   |   |   |--- SSH <= 0.50
+|   |   |   |   |   |   |--- rst_count <= 77.55
+|   |   |   |   |   |   |   |--- Std <= 87.10
+|   |   |   |   |   |   |   |   |--- Radius <= 73.61
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Radius >  73.61
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- Std >  87.10
+|   |   |   |   |   |   |   |   |--- AVG <= 223.55
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- AVG >  223.55
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- rst_count >  77.55
+|   |   |   |   |   |   |   |--- Protocol_Type <= 6.45
+|   |   |   |   |   |   |   |   |--- flow_duration <= 57.31
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- flow_duration >  57.31
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- Protocol_Type >  6.45
+|   |   |   |   |   |   |   |   |--- Header_Length <= 22829.00
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Header_Length >  22829.00
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |--- SSH >  0.50
+|   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |--- IAT >  0.02
+|   |   |   |   |   |--- Tot_size <= 119.09
+|   |   |   |   |   |   |--- Variance <= 0.89
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Variance >  0.89
+|   |   |   |   |   |   |   |--- flow_duration <= 64.74
+|   |   |   |   |   |   |   |   |--- Covariance <= 3569.78
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Covariance >  3569.78
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- flow_duration >  64.74
+|   |   |   |   |   |   |   |   |--- Min <= 64.81
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Min >  64.81
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- Tot_size >  119.09
+|   |   |   |   |   |   |--- fin_count <= 0.00
+|   |   |   |   |   |   |   |--- Weight <= 90.03
+|   |   |   |   |   |   |   |   |--- Srate <= 2.67
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Srate >  2.67
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- Weight >  90.03
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- fin_count >  0.00
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |--- Weight >  193.08
+|   |   |   |   |--- fin_count <= 0.65
+|   |   |   |   |   |--- AVG <= 137.60
+|   |   |   |   |   |   |--- Rate <= 0.21
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Rate >  0.21
+|   |   |   |   |   |   |   |--- Max <= 224.20
+|   |   |   |   |   |   |   |   |--- Std <= 24.99
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Std >  24.99
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- Max >  224.20
+|   |   |   |   |   |   |   |   |--- Tot_size <= 85.95
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Tot_size >  85.95
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |--- AVG >  137.60
+|   |   |   |   |   |   |--- IAT <= 166499176.00
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- IAT >  166499176.00
+|   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |--- fin_count >  0.65
+|   |   |   |   |   |--- Magnitue <= 32.27
+|   |   |   |   |   |   |--- Duration <= 106.25
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Duration >  106.25
+|   |   |   |   |   |   |   |--- Rate <= 20.57
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- Rate >  20.57
+|   |   |   |   |   |   |   |   |--- IAT <= 166478680.00
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- IAT >  166478680.00
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |--- Magnitue >  32.27
+|   |   |   |   |   |   |--- class: Benign
+|   |   |--- Header_Length >  41682.35
+|   |   |   |--- Rate <= 2.58
+|   |   |   |   |--- flow_duration <= 175.81
+|   |   |   |   |   |--- class: Benign
+|   |   |   |   |--- flow_duration >  175.81
+|   |   |   |   |   |--- Magnitue <= 13.71
+|   |   |   |   |   |   |--- Header_Length <= 47664.70
+|   |   |   |   |   |   |   |--- Radius <= 24.08
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- Radius >  24.08
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- Header_Length >  47664.70
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- Magnitue >  13.71
+|   |   |   |   |   |   |--- Magnitue <= 17.55
+|   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |--- Magnitue >  17.55
+|   |   |   |   |   |   |   |--- Tot_sum <= 794.65
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- Tot_sum >  794.65
+|   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |--- Rate >  2.58
+|   |   |   |   |--- Tot_size <= 2061.00
+|   |   |   |   |   |--- Rate <= 250.37
+|   |   |   |   |   |   |--- HTTPS <= 0.50
+|   |   |   |   |   |   |   |--- IAT <= 166499168.00
+|   |   |   |   |   |   |   |   |--- Rate <= 82.11
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Rate >  82.11
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- IAT >  166499168.00
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- HTTPS >  0.50
+|   |   |   |   |   |   |   |--- flow_duration <= 136.71
+|   |   |   |   |   |   |   |   |--- Variance <= 0.97
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Variance >  0.97
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- flow_duration >  136.71
+|   |   |   |   |   |   |   |   |--- Rate <= 13.20
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Rate >  13.20
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |--- Rate >  250.37
+|   |   |   |   |   |   |--- Number <= 11.50
+|   |   |   |   |   |   |   |--- rst_count <= 2541.70
+|   |   |   |   |   |   |   |   |--- Srate <= 2093.32
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Srate >  2093.32
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |--- rst_count >  2541.70
+|   |   |   |   |   |   |   |   |--- flow_duration <= 75.49
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- flow_duration >  75.49
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- Number >  11.50
+|   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |--- Tot_size >  2061.00
+|   |   |   |   |   |--- Header_Length <= 4577017.75
+|   |   |   |   |   |   |--- Variance <= 0.95
+|   |   |   |   |   |   |   |--- flow_duration <= 8.23
+|   |   |   |   |   |   |   |   |--- urg_count <= 20.25
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- urg_count >  20.25
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- flow_duration >  8.23
+|   |   |   |   |   |   |   |   |--- Max <= 2744.80
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |   |   |--- Max >  2744.80
+|   |   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- Variance >  0.95
+|   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |--- Header_Length >  4577017.75
+|   |   |   |   |   |   |--- Number <= 9.50
+|   |   |   |   |   |   |   |--- rst_count <= 6670.20
+|   |   |   |   |   |   |   |   |--- Rate <= 666.97
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |   |--- Rate >  666.97
+|   |   |   |   |   |   |   |   |   |--- class: Threat
+|   |   |   |   |   |   |   |--- rst_count >  6670.20
+|   |   |   |   |   |   |   |   |--- class: Benign
+|   |   |   |   |   |   |--- Number >  9.50
+|   |   |   |   |   |   |   |--- class: Benign
+|   |--- IAT >  166551400.00
+|   |   |--- class: Threat
