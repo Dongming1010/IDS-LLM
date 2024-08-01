@@ -65,9 +65,24 @@ Both files are under `Code_Base/Unmissing_features/8_categories(decision tree + 
    - Form input quries without confidence score: Run `2.2-file_prep.py`, quries will be stored as `analysis_input_without_prob.jsonl` in the same folder.
 3. **Feed quries to LLM(take gpt-1106-preview as example), and evaluate performance**
 
-   Run `parallel_request.py` under `Code_Base` folder, using the quries file above, an example command could be following:
+   Run `parallel_request.py` under `Code_Base` folder, using the quries file above, example commands could be like following:
 
-   ```python parallel_request.py dt_compare/temp.jsonl dt_compare/temp_res.jsonl```
+   ```python parallel_request.py /path/to/analysis_input_with_prob.jsonl /path/to/analysis_input_with_prob_results.jsonl```
+   ```python parallel_request.py /path/to/analysis_input_without_prob.jsonl /path/to/analysis_input_without_prob_results.jsonl```
 
+   Then, for our scenario, LLM responses will be stored in `analysis_input_with_prob_results.jsonl` for scenario with confidence score provided, and `analysis_input_without_prob_results.jsonl` for scenario without confidence socre provided.
+
+   Please Note:
+   - parallel_request.py only supports gpt-3.5-turbo, gpt-3.5-turbo-16k, gpt-4-1106-preview and gpt-4-0125-preview for now.
+   - Please replace your openai key in Line 470 in `parallel_request.py`
+
+5. **Evaluate LLM performance**
+
+   Please go to `Code_Base/Unmissing_features/8_categories(decision tree + LLM)/Part2(Prompt formation + GPT_Response + Evaluation)/dt_compare_gpt-3.5-turbo-16k/dt_compare`
+
+   Run `2.3-file_integration.py`, `2.4-file_integration.py` and `3.0-evaluation.py`
+
+   Please Note:
+   - The default naming evluation process is for scenario without confidence score. If evaluation for the scenario with confidence score provided is prefereed, please change `without` to `with` in every file path string in `2.3-file_integration.py`, `2.4-file_integration.py` and `3.0-evaluation.py`
 ## 8 Categories Network traffic prediction with missing features
 
