@@ -36,11 +36,11 @@ This workflow leverages the strengths of both decision trees and LLMs to provide
 
 ## Experiment reproduction
 
-## Test Dataset
+### Test Dataset
 
 For our experiments, we used a test set of 5,000 samples from the [CICIoT2023](https://www.unb.ca/cic/datasets/iotdataset-2023.html) dataset. This test set is used to evaluate the performance of our models in predicting and explaining network intrusion types.
 
-## 8 Categories Network traffic prediction without missing features
+### 8 Categories Network traffic prediction without missing features
 Note: Two Different decision trees are already trained. For more setting details of Two different trees, please refer to:
 1. 1st Decision tree: `dt_17.py`
 2. 2nd Decision tree: `dt_2.py`
@@ -76,7 +76,7 @@ Both files are under `Code_Base/Unmissing_features/8_categories(decision tree + 
    - parallel_request.py only supports gpt-3.5-turbo, gpt-3.5-turbo-16k, gpt-4-1106-preview and gpt-4-0125-preview for now.
    - Please replace your openai key in Line 470 in `parallel_request.py`
 
-5. **Evaluate LLM performance**
+4. **Evaluate LLM performance**
 
    Please go to `Code_Base/Unmissing_features/8_categories(decision tree + LLM)/Part2(Prompt formation + GPT_Response + Evaluation)/dt_compare_gpt-3.5-turbo-16k/dt_compare`
 
@@ -84,5 +84,39 @@ Both files are under `Code_Base/Unmissing_features/8_categories(decision tree + 
 
    Please Note:
    - The default naming evluation process is for scenario without confidence score. If evaluation for the scenario with confidence score provided is prefereed, please change `without` to `with` in every file path string in `2.3-file_integration.py`, `2.4-file_integration.py` and `3.0-evaluation.py`
-## 8 Categories Network traffic prediction with missing features
+### 8 Categories Network traffic prediction with missing features, take missing 1 features as Example
+Note: Two Different decision trees are already trained. For more setting details of Two different trees, please refer to:
+1. 1st Decision tree: `dt_17.py`
+2. 2nd Decision tree: `dt_2.py`
 
+Both files are under `Code_Base/Missing_features/Part1(Decision trees training + Path Extraction+Serialization)/script`
+
+If other number of missing features is preferred, please change the number in `selected_features = random.sample(all_features, 1)` in `find_paths_1.ipynb` and `find_paths_2.ipynb`accordingly.
+1. **Extract and Serialized decision tree paths of Two different decision trees with the default test file**
+
+   Please goes to `Code_Base/Unmissing_features/8_categories(decision tree + LLM)/Part1(Decision trees training + Path Extraction+Serialization)/script`
+
+   - For 1st decision tree: Run `find_paths_1.ipynb`
+   - For 2nd decision tree: Run `find_paths_2.ipynb`
+
+   Then, respective serialized files will be stored as `dt_1_1_missing.json` and `dt_2_1_missing.json` under `Code_Base/Missing_features/Part1(Decision trees training + Path Extraction+Serialization)/missing_feature/1_missing`
+2. **Form input quires for LLM**
+
+   Please goes to `Code_Base/Missing_features/Part2(Prompt formation + GPT_Response + Evaluation)/dt_compare_missing_features_miss1`
+   
+   Run `0.0-file_integration.py` `1.1-input_file_integration.py` `1.2-rep.py` `1.3-rep.py` and `2.0-file_prep.py` in order. Then:
+   
+   Input quries will be stored as `analysis_input.jsonl` in `Code_Base/Missing_features/Part2(Prompt formation + GPT_Response + Evaluation)/dt_compare_missing_features_miss1/output`
+
+3. **Feed quries to LLM(take gpt-1106-preview as example), and evaluate performance**
+
+   Run `parallel_request.py` under `Code_Base` folder, using the quries file above, example commands could be like following:
+
+   ```python parallel_request.py /path/to/analysis_input.jsonl /path/to/analysis_input_results.jsonl```
+
+   Then, for our scenario, LLM responses will be stored in `analysis_input_results.jsonl`
+4. **Evaluate LLM performance**
+
+   Please go to `Code_Base/Missing_features/Part2(Prompt formation + GPT_Response + Evaluation)/dt_compare_missing_features_miss1`
+
+   Run `2.1-file_integration.py`, `2.2-file_integration.py` and `3.0-evaluation.py` in order
