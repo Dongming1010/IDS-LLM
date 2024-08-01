@@ -49,6 +49,20 @@ Both files are under `Code_Base/Unmissing_features/8_categories(decision tree + 
 
 1. **Extract and Serialized decision tree paths of Two different decision trees with the default test file**
 
+   Please goes to `Code_Base/Unmissing_features/8_categories(decision tree + LLM)/Part1(Decision trees training + Path Extraction+Serialization)/script`
+
+   - For 1st decision tree: Run `path_search_revised_1.py`
+   - For 2nd decision tree: Run `path_search_revised_2.py`
+
+   Then, respective serialized files will be stored as `1_5000.csv` and `2_5000.csv` under `Code_Base/Unmissing_features/8_categories(decision tree + LLM)/Part1(Decision trees training + Path Extraction+Serialization)/processed`
+2. **Form input quires for LLM**
+
+   Please goes to `Code_Base/Unmissing_features/8_categories(decision tree + LLM)/Part2(Prompt formation + GPT_Response + Evaluation)/dt_compare_gpt-3.5-turbo-16k/dt_compare`
+   
+   Run `1.0-file_check.py` `1.1-input_file_integration.py` and `2.0-file_prep.py` in order. Then:
+   
+   - Form input quires with confidence score: Run `2.1-file_prep.py`, quries will be stored as `analysis_input_with_prob.jsonl` in the same folder.
+   - Form input quries without confidence score: Run `2.2-file_prep.py`, quries will be stored as `analysis_input_without_prob.jsonl` in the same folder.
    
 
 ## 8 Categories Network traffic prediction with missing features
