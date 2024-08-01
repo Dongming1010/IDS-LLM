@@ -63,7 +63,11 @@ Both files are under `Code_Base/Unmissing_features/8_categories(decision tree + 
    
    - Form input quires with confidence score: Run `2.1-file_prep.py`, quries will be stored as `analysis_input_with_prob.jsonl` in the same folder.
    - Form input quries without confidence score: Run `2.2-file_prep.py`, quries will be stored as `analysis_input_without_prob.jsonl` in the same folder.
-   
+3. **Feed quries to LLM(take gpt-1106-preview as example), and evaluate performance**
+
+   Run `parallel_request.py` under `Code_Base` folder, using the quries file above, an example command could be following:
+
+   ```python parallel_request.py dt_compare/temp.jsonl dt_compare/temp_res.jsonl```
 
 ## 8 Categories Network traffic prediction with missing features
 
