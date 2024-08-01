@@ -36,11 +36,13 @@ This workflow leverages the strengths of both decision trees and LLMs to provide
 
 ## Experiment reproduction
 
-## Example Scripts for (in work)
+## Test Dataset
 
-1. **Training Script**: `train_decision_trees.py`
-2. **Path Extraction Script**: `extract_paths.py`
-3. **Path Serialization Script**: `serialize_paths.py`
-4. **LLM Integration Script**: `llm_integration.py`
-5. **Evaluation Script**: `evaluate_model.py`
+For our experiments, we used a test set of 5,000 samples from the [CICIoT2023](https://www.unb.ca/cic/datasets/iotdataset-2023.html) dataset. This test set is used to evaluate the performance of our models in predicting and explaining network intrusion types.
+
+## 8 Categories Network traffic prediction without missing features
+
+
+
+## 8 Categories Network traffic prediction with missing features
 
