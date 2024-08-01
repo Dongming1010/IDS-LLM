@@ -120,3 +120,6 @@ If other number of missing features is preferred, please change the number in `s
    Please go to `Code_Base/Missing_features/Part2(Prompt formation + GPT_Response + Evaluation)/dt_compare_missing_features_miss1`
 
    Run `2.1-file_integration.py`, `2.2-file_integration.py` and `3.0-evaluation.py` in order
+
+## GPT Response Examples
+For some of the gpt-1106-preview please refers to `https://github.com/Dongming1010/IDS-LLM/blob/main/Detection_Reasoning_Examples.md`
