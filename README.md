@@ -41,8 +41,15 @@ This workflow leverages the strengths of both decision trees and LLMs to provide
 For our experiments, we used a test set of 5,000 samples from the [CICIoT2023](https://www.unb.ca/cic/datasets/iotdataset-2023.html) dataset. This test set is used to evaluate the performance of our models in predicting and explaining network intrusion types.
 
 ## 8 Categories Network traffic prediction without missing features
+Note: Two Different decision trees are already trained. For more setting details of Two different trees, please refer to:
+1. 1st Decision tree: `dt_17.py`
+2. 2nd Decision tree: `dt_2.py`
 
+Both files are under `Code_Base/Unmissing_features/8_categories(decision tree + LLM)/Part1(Decision trees training + Path Extraction+Serialization)/script`
 
+1. **Extract and Serialized decision tree paths of Two different decision trees with the default test file**
+
+   
 
 ## 8 Categories Network traffic prediction with missing features
 
