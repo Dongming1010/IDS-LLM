@@ -126,7 +126,7 @@ For some of the gpt-1106-preview please refers to `https://github.com/Dongming10
 
 
 ## Authors
-The NetLLM module and simulator is developed and maintained by:
+The IDS-LLM is developed and maintained by:
 
  1. Dongming Wu (NCSU)
 
