@@ -123,3 +123,26 @@ If other number of missing features is preferred, please change the number in `s
 
 ## GPT Response Examples
 For some of the gpt-1106-preview please refers to `https://github.com/Dongming1010/IDS-LLM/blob/main/Detection_Reasoning_Examples.md`
+
+
+## Authors
+The NetLLM module and simulator is developed and maintained by:
+
+ 1. Dongming Wu (NCSU)
+
+ 2. Zhiyuan Peng (NCSU)
+
+ 3. Yuchen Liu (NCSU)
+
+## Citation
+@inproceedings{Dongming2024trans,
+
+  title={Transforming Network Intrusion Detection Using Large Language Models},
+  
+  author={Wu, D. and Peng, Z. and Chen, M. and Liu, Y.},
+  
+  booktitle={IEEE/ACM xxx},
+  
+  year={2024}
+  
+}
