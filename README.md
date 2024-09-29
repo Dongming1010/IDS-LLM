@@ -141,8 +141,8 @@ The IDS-LLM is developed and maintained by:
   
   author={Wu, D. and Peng, Z. and Chen, M. and Liu, Y.},
   
-  booktitle={IEEE/ACM xxx},
+  booktitle={IEEE Consumer Communications & Networking Conference (CCNC)},
   
-  year={2024}
+  year={2025}
   
 }
