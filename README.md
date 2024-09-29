@@ -1,6 +1,6 @@
 # Transforming Network Intrusion Detection Using Large Language Models
 
-This repository contains the code implementation for the paper titled "Transforming Network Intrusion Detection Using Large Language Models." The project enhances network intrusion detection by integrating decision trees with large language models (LLMs) to improve classification accuracy and interpretability. It includes both complete and missing feature scenarios, demonstrating the robustness of various AI models. Examples from the GPT-1106-preview model are also provided to illustrate the performance and reasoning capabilities of the models in handling different network traffic types.
+This repository contains the code implementation for the paper titled "Transforming Network Intrusion Detection Using Large Language Models." The project enhances network intrusion detection by integrating decision trees with large language models (LLMs) to improve attack detection, analysis, classification accuracy and interpretability. It includes both complete and missing feature scenarios, demonstrating the robustness of various AI models. Examples from the GPT-1106-preview model are also provided to illustrate the performance and reasoning capabilities of the models in handling different network traffic types.
 
 ## Workflow Overview
 
